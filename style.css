@@ -20,22 +20,23 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: white;
     color: #fff;
     padding: 10px 0;
     z-index: 1000;
   }
 
   .header-container{
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
-    height: 2rem;
+    height: 54px;
     vertical-align: middle;
     white-space: nowrap;     
     width: 100%;    
     margin: 0 auto; 
     color: #f0f0f0; 
     padding: 0px;
+    margin-bottom: 20px;
     
   }
 
@@ -45,11 +46,32 @@
     list-style: none;    
     gap: 35px;
     padding: 5px 20px;
+    
   }    
   
 
   .logo-link{
     margin-left: auto;
+    width: 238px;
+    height: 54px;
+
+  }
+
+  .language{
+    font-family: "Tourney", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    padding-top: 10px;
+
+  }
+
+  .nav-links{
+    font-family: "Staatliches", sans-serif;;
+    font-weight: 400;
+    font-size: 22px;
+    color: black;
+    padding-top: 10px;
   }
 
   
@@ -57,9 +79,9 @@
   /* Container Styling */
   .container {
     display: flex;
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
-    margin-top: 60px; /* Height of the fixed header */
+    margin-top: 100px; /* Height of the fixed header */
     padding: 20 0px;
   }
   
@@ -78,10 +100,25 @@
   .sidebar-menu{
     list-style: none;
     padding: 0 20px;
+    font-weight: 400;
+    font-size: 36px;
   }
 
   .sidebar-item{
-    padding-bottom: 40px;
+    padding-bottom: 8px;
+    padding-top: 35px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #BDBDBD;
+    
+  }
+
+  .sidebar a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .sidebar-item:hover{
+    background-color: lightgrey;
   }
   
   /* Main Content Styling */
@@ -89,6 +126,49 @@
     flex: 1;
     background-color: #fff;
     padding: 20px ;
+    margin-top: 22px;
+    
+  }
+
+  .text-container-main{
+    width: 49.6rem;
+    line-height: 1.6;
+    padding-left: 5px;
+
+  }
+
+  .breakpoint-div{
+    width: 100px;
+    height: 8px;
+    border: 5px solid black;
+    margin-bottom: 20px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4{
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    
+    
+  }
+
+  p{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  sup{
+    font-family:  "Farro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    vertical-align: top;
+    text-transform: none;
   }
 
   /* Responsive Styles */
