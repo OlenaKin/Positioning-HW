@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Francois One", sans-serif;
+  }
+  
+  /* Header Styling */
+  .header {    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .header-container{
+    max-width: 1440px;
+    width: 100%;
+    height: 2rem;
+    vertical-align: middle;
+    white-space: nowrap;     
+    width: 100%;    
+    margin: 0 auto; 
+    color: #f0f0f0; 
+    padding: 0px;
+    
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: start;
+    list-style: none;    
+    gap: 35px;
+    padding: 5px 20px;
+  }    
+  
+
+  .logo-link{
+    margin-left: auto;
+  }
+
+  
+  
+  /* Container Styling */
+  .container {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 60px; /* Height of the fixed header */
+    padding: 20 0px;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    flex: 0 0 24rem;    
+    padding-top: 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 80px; /* Height of the fixed header + some space */
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    
+  }
+
+  .sidebar-menu{
+    list-style: none;
+    padding: 0 20px;
+  }
+
+  .sidebar-item{
+    padding-bottom: 40px;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px ;
+  }
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: relative;
+      top: auto;
+      height: auto;
+      overflow-y: visible;
+    }
+  
+    .main-content {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .header {
+      padding: 20px 0;
+      position: static;
+    }
+
+    
+
+    .sidebar-item{
+        text-align: center;
+        margin-bottom: 0;
+        
+    }
+  }
